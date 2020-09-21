@@ -235,7 +235,6 @@ def main():
         torrent_path = create_torrent(file_path.parent,
             config['User']['announce_url'], args.media)
         
-        
         # Upload torrent
         upload_torrent(driver, torrent_path, media_config[file], config['Site'],
             args.safe)
