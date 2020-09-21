@@ -61,7 +61,7 @@ def find_media_filenames(media_path, media_types):
         break
 
     r = re.compile('^.*\.({})$'.format('|'.join(media_types)), re.IGNORECASE)
-    return filter(r.match, f)
+    return list(filter(r.match, f))
 
 
 def generate_folder(file, file_config, media_path, rename, safe):
@@ -209,8 +209,10 @@ def main():
 
     # Find valid videos
     files = find_media_filenames(args.media, list(config['Media Types']))
-    
+    print(f'{len(files)} files detected')    
+
     for file in files:
+        print(f'Processing {file}')
         if file not in media_config:
             raise Exception(f'No config found for {file}')
 
