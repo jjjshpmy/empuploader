@@ -1,0 +1,5 @@
+[<filename>]
+Title : <optional, default: filename>
+Tags : <required, at least 8>
+Category : <required, from dropdown>
+Description : <required, at least 40 characters>

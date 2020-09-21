@@ -1,0 +1,21 @@
+[Media Types]
+mp4
+flv
+mkv
+m4v
+mov
+
+[Contact Sheet]
+columns = 3
+rows = 9
+tile_width = 300
+
+[User]
+username = <required>
+password = <required>
+announce_url = <optional>
+
+[Site]
+LOGIN_URL = https://www.empornium.me/login
+UPLOAD_URL = https://www.empornium.me/upload.php
+ANNOUNCE_XPATH = //a[@id='uploadform']/following-sibling::p/input
