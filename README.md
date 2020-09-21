@@ -1,7 +1,7 @@
 # autoemp
 
 ## Prerequisites
-Requires Python 3.7
+Requires Python 3.7  
 Requires Google Chrome
 
 ## Virtual environment
